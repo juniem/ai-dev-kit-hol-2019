@@ -16,7 +16,7 @@ Use this account to login to Azure, see and deploy Azure resources:
 Your device has already been set up as an Azure IoT Edge device, connected to an IoT Hub. This will enable you to remotely manage it. Let's first verify that your setup looks correct:
 
 - Let's connect to Azure via the portal to see your Edge device in your IoT Hub:
-    - In a browser, login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>
+    - In a browser, login to <a href="http://portal.azure.com" target="_blank">http://portal.azure.com</a>
     - Click on `All resources` from the left menu and search for your IoT Hub under your resource group
     - Click on your IoT Hub and then on `IoT Edge` section from the left menu
     - Verify that you can see your `visionkit` device is listed
