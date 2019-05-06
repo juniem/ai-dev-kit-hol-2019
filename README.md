@@ -74,7 +74,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Use your existing subscription and resource group
 - Give it a unique name, upper case characters are not allowed
 - Select the West-US 2 region
-- Click on `Review+Create`
+- Click on `Review+Create` (other default options shoudl be correct)
 - Wait until until provisioning is complete and navigate to yoru new storage account
 - From the `overview` tab, click on `Blobs` service
 - `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`
