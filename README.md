@@ -24,7 +24,7 @@ Your device has already been set up as an Azure IoT Edge device, connected to an
 ### Deploy a sample AI model
 We will now deploy an sample AI model to the camera. For that, we will use the AI Dev Kit get started module from the IoT Edge marketplace.
 
-- Go to <a href="https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/" target="blank">this link</a>and click on the  `AI Vision Dev Kit Get Started Module (preview)` and  `Create`.
+- Go to <a href="https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/" target="blank">this link</a> and click on the  `AI Vision Dev Kit Get Started Module (preview)` and  `Create`.
 
 - Choose your subscription, your IoT Hub, find your device named `visionkit` and click on `Next`
 
@@ -52,7 +52,7 @@ We'll build our own AI model to detect when someone is wearing an hard hat. You 
 Some training images have already been collected for you for the hard hat use case.
 
 Download them and upload them to your Custom Vision project:
-- Downlaod the .zip file at this location: a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
+- Downlaod the .zip file at this location: <a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
 - Uncompress it
 - Upload images to custom vision per tag (HardHat/NoHardHat) and tag them appropriately them during upload. Upload all pictures names similarly (like HardHat) at the same time.
 
