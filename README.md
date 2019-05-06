@@ -16,7 +16,7 @@ Use this account to login to Azure, see and deploy Azure resources:
 Your device has already been set up as an Azure IoT Edge device, connected to an IoT Hub. This will enable you to remotely manage it. Let's first verify that your setup looks correct:
 
 - Let's connect to Azure via the portal to see your Edge device in your IoT Hub:
-    - In a browser, login to [http://portal.azure.com](http://portal.azure.com)
+    - In a browser, login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>
     - Click on `All resources` from the left menu and search for your IoT Hub under your resource group
     - Click on your IoT Hub and then on `IoT Edge` section from the left menu
     - Verify that you can see your `visionkit` device is listed
@@ -24,7 +24,7 @@ Your device has already been set up as an Azure IoT Edge device, connected to an
 ### Deploy a sample AI model
 We will now deploy an sample AI model to the camera. For that, we will use the AI Dev Kit get started module from the IoT Edge marketplace.
 
-- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/) and click on the  `AI Vision Dev Kit Get Started Module (preview)` and  `Create`.
+- Go to <a href="https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/" target="blank">this link</a>and click on the  `AI Vision Dev Kit Get Started Module (preview)` and  `Create`.
 
 - Choose your subscription, your IoT Hub, find your device named `visionkit` and click on `Next`
 
@@ -35,10 +35,10 @@ We will now deploy an sample AI model to the camera. For that, we will use the A
 After a few minutes (time to download the module), you should now see objects being detected by the camera when looking at its HDMI output!
 
 ## Build your own AI model
-We'll build our own AI model to detect when someone is wearing an hard hat. You have an hard hat on your desk which well be used to validate your model built with [Custom Vision](https://www.customvision.ai/).
+We'll build our own AI model to detect when someone is wearing an hard hat. You have an hard hat on your desk which well be used to validate your model built with <a href="https://www.customvision.ai/" target="blank">Custom Vision</a>.
 
 ### Setup up a new Custom Vision project
-- Login to the Azure Custom Vision Service (Preview) at [https://www.customvision.ai](https://www.customvision.ai).
+- Login to the Azure Custom Vision Service (Preview) at <a href="https://www.customvision.ai/" target="blank">https://www.customvision.ai/</a>.
 
 - Create a new project, use these recommended settings:
     - Give it a name like `Simulated HardHat Detector`
@@ -52,7 +52,7 @@ We'll build our own AI model to detect when someone is wearing an hard hat. You 
 Some training images have already been collected for you for the hard hat use case.
 
 Download them and upload them to your Custom Vision project:
-- Downlaod the .zip file at this location: [https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL](https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL)
+- Downlaod the .zip file at this location: a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
 - Uncompress it
 - Upload images to custom vision per tag (HardHat/NoHardHat) and tag them appropriately them during upload. Upload all pictures names similarly (like HardHat) at the same time.
 
@@ -66,7 +66,7 @@ To deploy your custom model, we will first store your model in a publicly access
 
 #### Uploading new custom model files
 We'll start by creating a new storage account and then upload your model to it.
-- Login to the [Azure portal ](http://portal.azure.com)
+- Login to the <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>
 - Search for `Storage` and select the `Storage accounts` service
 - Use your existing subscription and resource group
 - Give it a unique name, upper case characters are not allowed
@@ -80,7 +80,7 @@ We'll start by creating a new storage account and then upload your model to it.
 
 #### Updating the configuration of the Get Started module to use your new custom model
 
-- Login to the [Azure portal ](http://portal.azure.com) and go to your ioT Hub resource
+- Login to the <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to your ioT Hub resource
 - Click on `IoT Edge` tab and then on your camera device named `visionkit`
 - Click on the `AIVisionDevKitGetStartedModule` module name and click on `Module Identity Twin`
 - Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`
@@ -92,9 +92,9 @@ After a few minutes, your device should now be running your custom model!
 - Verify that the camera picks it up and correctly classify you as wearing the hard hat
 
 ## Going further
-As a next step, you could re-use the same training images but build an object detection model instead of an image classifier. For that, please use this [environment of custom vision](https://iris-demo1.azurewebsites.net/projects) and use its labeling tool.
+As a next step, you could re-use the same training images but build an object detection model instead of an image classifier. For that, please use this <a href="https://iris-demo1.azurewebsites.net/projects" target="blank">environment of custom vision</a> and use its labeling tool.
 
-To learn more about this AI Dev Kit, visit https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/
+To learn more about this AI Dev Kit, visit <a href="https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/" target="blank">https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/</a> 
 
 
 ## Clean up
