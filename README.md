@@ -52,9 +52,9 @@ We'll build our own AI model to detect when someone is wearing an hard hat. You 
 Some training images have already been collected for you for the hard hat use case.
 
 Download them and upload them to your Custom Vision project:
-- Downlaod the .zip file at this location: [https://1drv.ms/u/s!AkzLzaBpSgoMo9dhS3q2jLb85H2-Fg?e=Rht04X](https://1drv.ms/u/s!AkzLzaBpSgoMo9dhS3q2jLb85H2-Fg?e=Rht04X)
+- Downlaod the .zip file at this location: [https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL](https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL)
 - Uncompress it
-- Upload images to custom vision per tag (HardHat/NoHardHat/Negative) and tag them appropriately them during upload. Upload all pictures names similarly (like HardHat) at the same time.
+- Upload images to custom vision per tag (HardHat/NoHardHat) and tag them appropriately them during upload. Upload all pictures names similarly (like HardHat) at the same time.
 
 ### Train and export your custom model
 To train it with your new training data, go to your Custom Vision project and click on `Train`.
@@ -74,7 +74,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Click on `Review+Create`
 - Wait until until provisioning is complete and navigate to yoru new storage account
 - From the `overview` tab, click on `Blobs` service
-- `Add a new container`, give it a name like `model001` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`
+- `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`
 - Click on the container just created, Click on the `Upload` button and select your files from the custom vision service and `Upload`
 - Copy the three URLs of these files by clicking on each of them and copying their URL to the clipboard
 
